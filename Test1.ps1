@@ -11,3 +11,6 @@ if ($regex.IsMatch($ip)) {
 }
 
 
+$FilePath = "C:\Data\Source\Public\New Text Document.txt"
+([System.IO.File]::ReadAllBytes($FilePath)[0..1023]) -notcontains 0
+
